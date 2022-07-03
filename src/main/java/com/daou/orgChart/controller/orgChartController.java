@@ -17,12 +17,12 @@ public class orgChartController {
 
     private final ChartRepository chartRepository;
 
-    @GetMapping("list")
+    @GetMapping("/list")
     public List<OrganizationChart> findAllDept() {
         return chartRepository.findAll();
     }
 
-    @PostMapping("new")
+    @PostMapping("/new")
     public OrganizationChart newContent() {
         final OrganizationChart org = OrganizationChart.builder()
                                         .dep_cd("TEST_01")
