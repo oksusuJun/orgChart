@@ -25,6 +25,11 @@ public class OrganizationChart {
     @Column(length=10, insertable=true)
     private String upp_dep;
 
+    public OrganizationChart(String dep_nm, String upp_dep) {
+        this.dep_nm = dep_nm;
+        this.upp_dep = upp_dep;
+    }
+
     public OrganizationChart(String dep_cd, String dep_nm, String upp_dep) {
         this.dep_cd = dep_cd;
         this.dep_nm = dep_nm;
